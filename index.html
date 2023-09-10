@@ -43,7 +43,7 @@
         <section class="hero-section section">
             <div class="container">
                 <h1 class="hero-title">Effective Solutions for Your Business</h1>
-                <button class="hero-button btn" type="button" data-modal-open>Order Service</button>
+                <button class=" btn btn-accent hero-button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="advantages-section section">
@@ -388,7 +388,7 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
 
             <button class="modal-close-btn" type="button" data-modal-close>
@@ -397,6 +397,52 @@
                 </svg>
             </button>
 
+            <p class="modal-caption">
+                Leave your contacts and we will call you back
+            </p>
+            <form class="modal-form" name="modal-form">
+                <label class="modal-form-label" for="user-name">Name</label>
+                <div class="modal-form-field">
+                    <input class="modal-form-input" type="text" name="user-name" id="user-name" />
+                    <svg class="form-input-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-phone">Phone</label>
+                <div class="modal-form-field">
+                    <input class="modal-form-input" type="text" name="user-phone" id="user-phone" />
+                    <svg class="form-input-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+
+                <label class="modal-form-label" for="user-email"> Email</label>
+                <div class="modal-form-field">
+                    <input class="modal-form-input" type="text" name="user-email" id="user-email" />
+                    <svg class="form-input-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+
+                <label class="modal-form-label" for="form-comment">Comment</label>
+                <textarea class="modal-form-comment" name="form-comment" id="form-comment"
+                    placeholder="Text input"></textarea>
+
+                <label class="modal-form-agreement">
+                    <input class="visually-hidden" type="checkbox" name="user-agreement" />
+                    <span class="modal-form-checkbox">
+                        <svg class="icon-checked" width="16" height="16">
+                            <use href="./images/icons.svg#icon-checked"></use>
+                        </svg>
+                    </span>
+                    <span class="modal-form-agreement-decription"> I accept the terms and conditions of the
+                        <a class="modal-form-agreement-link" href="#">Privacy Policy</a>
+                    </span>
+                </label>
+
+                <button class="btn btn-accent modal-form-btn" type="submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
