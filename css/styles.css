@@ -389,7 +389,7 @@ img {
   display: flex;
   align-items: baseline;
 }
-.footer-socialmedia-title {
+.footer-title {
   font-weight: 500;
   font-size: 16px;
   color: var(--white-text-bg-color);
@@ -398,6 +398,9 @@ img {
 .footer-first-block {
   margin-right: 120px;
 }
+.footer-solcailmedia-block {
+  margin-right: 80px;
+}
 .footer-links {
   gap: 16px;
 }
@@ -405,6 +408,68 @@ img {
 .footer-social-link-item:focus {
   background-color: var(--footer-accent-color);
 }
+
+.footer-text {
+  margin-bottom: 16px;
+}
+
+.form-container {
+  display: flex;
+}
+.footer-form-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+
+  color: var(--white-text-bg-color);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  border: 1px solid var(--white-text-bg-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer-form-input::placeholder {
+  color: var(--white-text-bg-color);
+
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.footer-form-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 24px;
+
+  background-color: var(--primary-brand-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.footer-btn-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  color: var(--white-text-bg-color);
+}
+.footer-form-icon {
+  fill: var(--white-text-bg-color);
+}
+
 /*PORTFOLIO PAGE  */
 .porfolio-section {
   padding-top: 96px;
